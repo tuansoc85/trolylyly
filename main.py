@@ -1,7 +1,6 @@
 import os
 import telegram
-from telegram.ext import Updater, CommandHandler, MessageHandler
-from telegram.ext.filters import Filters
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import google.generativeai as genai
 
 # **QUAN TRỌNG:** Thay thế bằng API key của bot nina_votv_bot
