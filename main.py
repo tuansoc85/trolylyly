@@ -4,7 +4,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import google.generativeai as genai
 
 # **QUAN TRỌNG:** Thay thế bằng API key của bot nina_votv_bot
-TELEGRAM_BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+TELEGRAM_BOT_TOKEN = "7679384872:AAHqaPmCyrwKSxy6buDbJBAokQ6aoVAU3CY"
 # API key của Gemini sẽ được lấy từ biến môi trường trên Render
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
