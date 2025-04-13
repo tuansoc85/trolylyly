@@ -11,6 +11,7 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 # Kiểm tra xem GEMINI_API_KEY có tồn tại không
 if not GEMINI_API_KEY:
     print("Warning: GEMINI_API_KEY environment variable not set. Gemini functionality will not work.")
+    model = None  # Đặt model thành None nếu không có API key
 else:
     # Khởi tạo mô hình Gemini
     genai.configure(api_key=GEMINI_API_KEY)
@@ -19,8 +20,6 @@ else:
     except Exception as e:
         print(f"Error initializing Gemini model: {e}")
         model = None
-else:
-    model = None
 
 async def start(update, context):
     await update.message.reply_text('Chào mừng bạn đến với bot Nina!')
